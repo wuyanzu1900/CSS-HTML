@@ -1,0 +1,101 @@
+.mine_cart{
+    background-image: url(image/bg3.jpg);
+    height: 250px;
+    z-index: 1;
+    position: relative;
+}
+.touxiang{
+    position: absolute;
+    background-image: url(image/t1.jpg);
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    z-index: 3;
+    margin-left: 340px;
+    margin-top: -45px;
+    border-radius: 10%;
+    display: block;
+}
+.nickname{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 3; 
+    margin-left: 300px;
+    margin-top: -30px;
+
+}
+.camera{
+    position: absolute;
+    background-image: url(image/4.png);
+    z-index: 3; 
+    margin-left: 355px;
+    margin-top: -230px;
+    width: 30px;
+    height: 30px;
+}
+.return{
+    position: absolute;
+    background-image: url(image/return.png);
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: -230px;
+    z-index: 3;
+
+}
+.weui-media-box__title{
+    color: blue;
+    font-size: 15px;
+}
+.weui-media-box-weui-media-box_appmsg{
+    z-index: 1;
+}
+.comment{
+    position: absolute;
+    background-image: url(image/comment3.png);
+    z-index: 3;
+    width: 16px;
+    height: 16px;
+    margin-left: 375px;
+    margin-top: 65px;
+}
+.time{
+   font-size: 10px;
+   position: absolute;
+   color: rgb(115, 134, 148);
+   margin-left: 75px;
+   margin-top: 65px;
+}
+.weui-media-box__desc{
+    font-size: 14px;
+    color: black;
+}
+.box{
+    height: 150px;
+    border-bottom: solid 0.1px;
+    border-color: gray;
+}
+.box1{
+    height: 150px;
+    border-bottom: solid 0.1px;
+    border-color: gray;
+}
+.box2{
+    height: 150px;
+    border-bottom: solid 0.1px;
+    border-color: gray;
+}
+.box3{
+    height: 150px;
+    border-bottom: solid 0.1px;
+    border-color: gray;
+}
+.weui-media-box__thumb{
+    border-radius: 10%;
+}
+.news{
+    width: 50px;
+    height: 50px;
+}

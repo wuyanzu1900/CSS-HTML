@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat</title>
+    <style>
+      #box{
+            width: 150px;
+            height: 350px;
+            /* absolute绝对定位，相对于父级第一个设置了定位属性的元素来定位，如果没有相对于body */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* translated3d中三个数值分别表示x,y,z */
+            /* -表示向左 */
+            /* transform是相对于自己的宽高来计算百分比 */
+            transform: translate3d(-50%,-50%,0);
+        }
+       
+      .body{
+            background: url("./cat/maoshenti.png");
+            width: 117px;
+            height: 201px;
+            /* absolute绝对定位，相对于父级第一个设置了定位属性的元素来定位，如果没有相对于body */
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            /* translated3d中三个数值分别表示x,y,z */
+            /* -表示向左 */
+            /* transform是相对于自己的宽高来计算百分比 */
+            transform: translate3d(-50%,-50%,0);
+            z-index: 9;
+            
+      }
+      .weiba{
+            background: url("./cat/maowei.png");
+            position: absolute;
+            width: 64px;
+            height: 194px;
+            top: -110px;
+            /* 摇摆（rotate）动起来 */
+            animation: ani 0.5s ease-in-out infinite alternate;
+            /* esae-in-out动画的速度 */
+            /* 3s时间 */
+            /* ani名字 */
+            /* 动画要播放几次 */
+            /* infinite动画播放几次：无穷大 */
+            /* both:0->100% ,100%->0都是同样的速度时间摆动 */
+            /* 以尾巴的根部旋转，默认：50% 50% 中心点来旋转 */
+            transform-origin: 100% 100%;
+            /* 只有使用盒模型（Box Model）来定位的元素可以被变换（transformed）。 */
+            z-index: 2;
+        }
+        @keyframes ani{
+            100%{   
+                /* 逆时针 5deg */
+                transform: rotate(-18deg);
+
+            }
+        }
+        .maozhua{
+            background: url("./cat/maozhua.png");
+            position:absolute;
+            width: 34px;
+            height: 81px;
+            top: 262px;
+            left: 82px;
+            animation: ani2 0.5s ease-in-out infinite alternate;
+            transform-origin: 0 0;
+            z-index: 1;
+        }
+         @keyframes ani2{
+                100%{transform: rotate(-18deg);}
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+    <div class="body"></div>
+    <div class="maozhua"></div>
+    <div class="weiba"></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat</title>
+    <style>
+        .body{
+            background: url("./cat/maoshenti.png");
+            width: 117px;
+            height: 201px;
+            /* absolute绝对定位，相对于父级第一个设置了定位属性的元素来定位，如果没有相对于body */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* translated3d中三个数值分别表示x,y,z */
+            /* -表示向左 */
+            /* transform是相对于自己的宽高来计算百分比 */
+            transform: translate3d(-50%,-50%,0);
+            z-index: 99;
+            
+            
+        }
+        .weiba{
+            background: url("./cat/maowei.png");
+            position: absolute;
+            width: 64px;
+            height: 194px;
+            top: -182px;
+            /* 摇摆（rotate）动起来 */
+            animation: ani 1s ease-in-out infinite alternate;
+            /* esae-in-out动画的速度 */
+            /* 3s时间 */
+            /* ani名字 */
+            /* 动画要播放几次 */
+            /* infinite动画播放几次：无穷大 */
+            /* both:0->100% ,100%->0都是同样的速度时间摆动 */
+            /* 以尾巴的根部旋转，默认：50% 50% 中心点来旋转 */
+            transform-origin: 100% 100%;
+        }
+        /* 关键帧：动画里面几个关键的点 */
+        /* 定义一个ani的动画 */
+        @keyframes ani{
+            100%{   
+                /* 逆时针 5deg */
+                transform: rotate(-8deg);
+
+            }
+        }
+        .maozhua{
+            background: url("./cat/maozhua.png");
+            position: absolute;
+            width: 34px;
+            height: 81px;
+            top: 456px;
+            left: 778px;
+            animation: ani2 1s ease-in-out infinite alternate;
+            transform-origin: 0 0;
+            /* 两个元素重叠谁在上面 */
+            z-index: 2;
+            }
+            @keyframes ani2{
+                100%{transform: rotate(-8deg);}
+                
+            }
+        .maoyan1{
+            background: url("./cat/mamyan1.png");
+            position: relative;
+            width: 14px;
+            height: 18px;
+            top: 80px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <!-- body和maozhua平级 -->
+    <!-- body:z-index maozhua:z-index -->
+    <!-- 如果不平级，嵌套 -->
+    <!-- z-index为99 -->
+    <div class="body">
+    <div class="weiba"></div>
+    </div>
+    <div class="maozhua"></div>
+     
+  
+</div>
+</body>
+</html>
