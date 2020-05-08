@@ -24,6 +24,22 @@
     background-color: var(--bg-color);
     padding: calc(var(--base-size) * 1px);
   }
+  /* css选择器  竖屏手机480px ipad 1024*768 pc端1100+ 巨屏1200+*/
+  /* @media(max-width: 480px){
+    :root{
+      --base-size:8;
+    }
+  } */
+  @media screen and (min-width:1200px){
+    :root{
+      --base-size:20;
+    }
+  }
+  @media only screen and (max-device-width:1024px) and(min-device-width:768px){
+    :root{
+      --base-size:8;
+    }
+  }
   /* 当是手机浏览时， 请把box 宽， 高，  padding 大小
   等比例缩放80%, 在变量上做文章 */
   </style>
