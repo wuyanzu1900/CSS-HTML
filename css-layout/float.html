@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border:1px solid #000;
+        }
+        /* 不清除float影响外面布局，有悖于"隔离容器" */
+        .main{
+            width: 40px;
+            height: 200px;
+            background-color: bisque;
+            float: left;
+            /* float:word里面文字环绕 */
+            /*顶到包含块的最左边*/
+        }
+        .BFC{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="BFC">
+            <div class="main">main</div>
+        </div>
+        <div class="aside">aside</div>
+    </div>
+</body>
+</html>
