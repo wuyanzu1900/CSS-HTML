@@ -59,32 +59,32 @@ ul,ol{
     vertical-align: middle;
     background: transparent url(https://img3.doubanio.com/f/sns/8536084688879cb1137e8efdff30e59614ff2f86/pics/sns/anony_home/anony_nav_logo.png) no-repeat 100% 100%;
 }
-#anony-nav .anony-nav-links li .link-book{
+#anony-nav .anony-nav-links li .lnk-book{
     background-position:0 0;
 }
-#annoy-nav .anony-nav-links li .lnk-movie{
+#anony-nav .anony-nav-links li .lnk-movie{
     background-position: -60px 0;
 }
-#annoy-nav .anony-nav-links li .lnk-music{
+#anony-nav .anony-nav-links li .lnk-music{
     background-position: -120px 0;
 }
-#annoy-nav .anony-nav-links li .lnk-events{
+#anony-nav .anony-nav-links li .lnk-events{
     background-position: -299px 0;
 }
-#annoy-nav .anony-nav-links li .lnk-group{
+#anony-nav .anony-nav-links li .lnk-group{
     background-position: -180px 0;
 }
-#annoy-nav .anony-nav-links li .lnk-read{
-    background: transparent url(/f/sns/f3ba00e…/pics/sns/anony_home/ic_read_home_nav.png) no-repeat 100% 100%;
+#anony-nav .anony-nav-links li .lnk-read{
+    background: transparent url(/image/read.png) no-repeat 100% 100%;
 }
-#annoy-nav .anony-nav-links li .lnk-fm{
+#anony-nav .anony-nav-links li .lnk-fm{
     background-position: -241px 0;
 }
-#annoy-nav .anony-nav-links li .lnk-shijian{
+#anony-nav .anony-nav-links li .lnk-shijian{
     margin-bottom: 1px;
-    background: transparent url(/f/sns/b474dd4…/pics/sns/anony_home/ic_shijian_home_nav.png) no-repeat 100% 100%;
+    background: transparent url(/image/time.png) no-repeat 100% 100%;
 }
-#annoy-nav .anony-nav-links li .lnk-market{
+#anony-nav .anony-nav-links li .lnk-market{
     width: 42px;
     background-position: -421px 0;
 }
@@ -99,8 +99,7 @@ ul,ol{
     padding: 0;
     font-size: 12px;
     font-weight: normal;
-    background: url(/f/sns/19886d4…/pics/nav/logo_db.png) no-repeat 0 0;
-    background-image: -webkit-image-set(url(/f/sns/19886d4…/pics/nav/logo_db.png) 1x, url(/f/sns/0f9e2db…/pics/nav/logo_db@2x.png) 2x);
+    background: url(https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png) no-repeat 0 0;
 }
 #anony-nav h1 a{
     display: block;
@@ -133,6 +132,30 @@ form{
     height: 30px;
     overflow: hidden;
 }
+#anony-nav .anony-srh .inp input {
+    width: 240px;
+    border: none;
+    font-size: 13px;
+    height: 20px;
+    padding: 5px;
+}
+input {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+input {
+    font-size: 12px;
+}
+input, button, textarea, select {
+    *font-size: 100%;
+}
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
 #anony-nav .anony-srh .bn{
     position: absolute;
     right: 0;
@@ -141,9 +164,19 @@ form{
     height: 30px;
     overflow: hidden;
     cursor: pointer;
-    background: url(/f/sns/f71f159…/pics/icon/bn_srh_1.png) 50% 50% no-repeat;
+    background: url(https://img3.doubanio.com/f/sns/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png) 50% 50% no-repeat;
 }
-
+#anony-nav .anony-srh .bn input {
+    border: none;
+    background: transparent;
+    *padding-left: 30px;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
 element.style {
     background-image: url(https://img9.doubanio.com/view/puppy_image/raw/public/16ad990ec23uwn790d4.jpg);
 }

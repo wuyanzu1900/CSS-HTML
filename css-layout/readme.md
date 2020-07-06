@@ -42,3 +42,18 @@ margin
   - contain 是 paint (例如: contain: paint;)
 
 ## css
+
+
+## layout
+
+- normal flow
+- float
+- position
+- flex
+- 
+
+## flex
+容器:
+flex-direction:row / cloumn
+justify-content:center/start/end
+align-item:center/start/end

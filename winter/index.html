@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+        background:green;
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>aa</h1>
+        <p>bb</p>
+    </div>
+    <script>
+        // 渲染节点的入口 node
+        // w3c标准的属性有哪些  浏览器的实验属性
+        // -webkit-font-smothing 使字体更平滑
+        // -webkit-taphighlight
+        // -webkitUserSelect
+        // 不以webkit开始
+        console.log(Object.keys(document.body.style)
+        .filter((e) => !e.match(/^webkit/)).lenght);
+        
+    </script>
+</body>
+</html>
