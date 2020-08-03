@@ -23,7 +23,7 @@ js->relayout->repaint->composite(合成) -GPU
 - 当前这个layers的变化不会影响其他layers
 - 对于transform，opacity 产生了变化，不会经过relayout repaint 跳到 composite
 
-## 
+##  都能出发GPU加速
 video
 有 3D transform
 backface-visibility 为 hidden
